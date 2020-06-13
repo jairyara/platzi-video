@@ -11,20 +11,60 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="headerLogin">
         <img class="header__img" src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="Logo Platzi Video">
-        <div class="header__menu">
-            <div class="header__menu--profile">
-                <i class="header__img--profile fas fa-user-circle"></i>
-                <p>perfil</p>
-            </div>
-            <ul>
-                <li><a href="">cuenta</a></li>
-                <li><a href="">cerrar sesión</a></li>
-            </ul>
-        </div>
     </header>
-
+    <section class="login">
+        <div class="login__form">
+            <h2 class="login__form--title">
+                Inicia sesión
+            </h2>
+            <form action="">
+                <input type="text" class="login__form--input" placeholder="Correo" required>
+                <input type="password" class="login__form--input" placeholder="Contraseña" required>
+                <input class="login__form--btn" type="submit" value="Iniciar sesión">
+            </form>
+            <div class="login__form--remember">
+                <div>
+                    <input id="login__form--checkbox" type="checkbox">
+                    <label class="login__form--label" for="login__form--checkbox">Recuérdame</label>
+                </div>
+                <a href="" class="login__form--remember--password">
+                    Olvidé mi contraseña
+                </a>
+            </div>
+            <div class="login__form--auth">
+                <div>
+                    <a class="login__form--signin" href="">
+                        <i class="fab fa-google"></i> Inicia sesión con Google
+                    </a>
+                </div>
+                <div>
+                    <a class="login__form--signin" href="">
+                        <i class="fab fa-twitter"></i> Inicia sesión con Twitter
+                    </a>
+                </div>
+            </div>
+            <div class="login__form--signup">
+                <h3 class="login__form--signup--text">
+                    No tienes cuenta.
+                </h3>
+                <a class="login__form--signup--link" href="signup.html">
+                        Regístrate
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footerLogin">
+        <a href="">
+            Términos de uso
+        </a>
+        <a href="">
+            Declaración de privacidad</a>
+        <a href="">
+            Centro de ayuda
+        </a>
+    </footer>
 
 </body>
 

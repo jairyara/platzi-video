@@ -11,62 +11,64 @@
 </head>
 
 <body>
-    <header class="header">
-        <img src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="" class="header__img">
-        <div class="header__menu">
-            <div class="header__menu--profile">
-                <i class="header__img--profile fas fa-user-circle"></i>
-                <p>perfil</p>
+    <main class="dashboard">
+        <header class="headerApp">
+            <img src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="" class="header__img">
+            <div class="header__menu">
+                <div class="header__menu--profile">
+                    <i class="header__img--profile fas fa-user-circle"></i>
+                    <p>perfil</p>
+                </div>
+                <ul>
+                    <li><a href="">cuenta</a></li>
+                    <li><a href="">cerrar sesión</a></li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="">cuenta</a></li>
-                <li><a href="">cerrar sesión</a></li>
-            </ul>
-        </div>
-    </header>
-    <section class="search">
-        <h2 class="search__title">¿Que quieres ver hoy?</h2>
-        <input class="input" type="text" placeholder="Buscar...">
-    </section>
+        </header>
+        <section class="search">
+            <h2 class="search__title">¿Que quieres ver hoy?</h2>
+            <input class="input" type="text" placeholder="Buscar...">
+        </section>
 
-    <section class="carousel">
-        <div class="carousel__container">
-            <div class="carousel-item">
-                <img class="carousel-item__img" src="https://images.pexels.com/photos/3695801/pexels-photo-3695801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260https://images.pexels.com/photos/3695801/pexels-photo-3695801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt="">
-                <div class="carousel-item__details">
-                    <div class="carousel-items__icons">
-                        <i class="carousel-items__icons--icon fas fa-play-circle"></i>
-                        <i class="carousel-items__icons--icon fas fa-plus-circle"></i>
+        <section class="carousel">
+            <div class="carousel__container">
+                <div class="carousel-item">
+                    <img class="carousel-item__img" src="https://images.pexels.com/photos/3695801/pexels-photo-3695801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260https://images.pexels.com/photos/3695801/pexels-photo-3695801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="">
+                    <div class="carousel-item__details">
+                        <div class="carousel-items__icons">
+                            <i class="carousel-items__icons--icon fas fa-play-circle"></i>
+                            <i class="carousel-items__icons--icon fas fa-plus-circle"></i>
+                        </div>
+                        <p class="carousel-item__details--title">título descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2020 16+ 120 min</p>
                     </div>
-                    <p class="carousel-item__details--title">título descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2020 16+ 120 min</p>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-item__img" src="https://images.pexels.com/photos/3310694/pexels-photo-3310694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                    <div class="carousel-item__details">
+                        <div class="carousel-items__icons">
+                            <i class="carousel-items__icons--icon fas fa-play-circle"></i>
+                            <i class="carousel-items__icons--icon fas fa-plus-circle"></i>
+                        </div>
+                        <p class="carousel-item__details--title">título descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2020 16+ 120 min</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-item__img" src="https://images.pexels.com/photos/3093518/pexels-photo-3093518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                    <div class="carousel-item__details">
+                        <div class="carousel-items__icons">
+                            <i class="carousel-items__icons--icon fas fa-play-circle"></i>
+                            <i class="carousel-items__icons--icon fas fa-plus-circle"></i>
+                        </div>
+                        <p class="carousel-item__details--title">título descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2020 16+ 120 min</p>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img class="carousel-item__img" src="https://images.pexels.com/photos/3310694/pexels-photo-3310694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                <div class="carousel-item__details">
-                    <div class="carousel-items__icons">
-                        <i class="carousel-items__icons--icon fas fa-play-circle"></i>
-                        <i class="carousel-items__icons--icon fas fa-plus-circle"></i>
-                    </div>
-                    <p class="carousel-item__details--title">título descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2020 16+ 120 min</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="carousel-item__img" src="https://images.pexels.com/photos/3093518/pexels-photo-3093518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                <div class="carousel-item__details">
-                    <div class="carousel-items__icons">
-                        <i class="carousel-items__icons--icon fas fa-play-circle"></i>
-                        <i class="carousel-items__icons--icon fas fa-plus-circle"></i>
-                    </div>
-                    <p class="carousel-item__details--title">título descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2020 16+ 120 min</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 </body>
 
