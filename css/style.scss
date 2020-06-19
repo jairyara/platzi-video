@@ -1,3 +1,9 @@
+$gradient_background: linear-gradient(#21c08b, #AB88ff);
+$complete_width: 100%;
+$purple_dark: #8f57fd;
+
+/* General styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,17 +14,36 @@ body {
     font-family: 'Muli', sans-serif;
 }
 
-.dashboard {
-    background-color: #8f57fd;
-    width: 100%;
+.flex {
+    display: flex;
+    align-items: center;
 }
 
-.headerApp {
-    width: 100%;
-    height: 90px;
+.flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex_between {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.flex_around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dashboard {
+    background-color: $purple_dark;
+    width: $complete_width;
+    .header {
+        height: 90px;
+        @extend .flex_between;
+    }
 }
 
 .header__img {
@@ -38,9 +63,7 @@ body {
 }
 
 .header__menu--profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend .flex_center;
     cursor: pointer;
 }
 
@@ -92,7 +115,6 @@ ul:hover {
     width: 60vw;
     padding: 0 10px;
     font-size: 1rem;
-    font-family: 'Muli', sans-serif;
     outline: none;
 }
 
@@ -174,8 +196,7 @@ ul:hover {
 }
 
 .carousel-items__icons {
-    display: flex;
-    align-items: center;
+    @extend .flex;
 }
 
 .carousel-items__icons--icon {
@@ -206,17 +227,13 @@ ul:hover {
 
 /* Login styles */
 
-.headerLogin {
+.bg-header {
     background: #21c08b;
 }
 
-.login,
-.signup,
-.error {
-    background: linear-gradient(#21c08b, #AB88ff);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.main {
+    background: $gradient_background;
+    @extend .flex_center;
     flex-direction: column;
     padding: 0 30px;
     min-height: calc(100vh - 200px);
@@ -246,15 +263,12 @@ ul:hover {
 }
 
 .login__form--remember {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend .flex_between;
     color: white;
 }
 
 .login__form--remember div {
-    display: flex;
-    align-items: center;
+    @extend .flex;
 }
 
 .login__form--remember--password {
@@ -268,14 +282,10 @@ ul:hover {
 }
 
 .login__form--auth {
-    display: flex;
-    justify-content: space-around;
     flex-direction: column;
 }
 
 .login__form--auth>div {
-    display: flex;
-    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -320,7 +330,6 @@ ul:hover {
     border-left: 0;
     border-bottom: 2px solid white;
     font-size: 1rem;
-    font-family: 'Muli', sans-serif;
     outline: none;
     margin-bottom: 10px;
     padding: 0 10px;
@@ -334,7 +343,6 @@ ul:hover {
     letter-spacing: 3px;
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Muli', sans-serif;
     color: white;
     border: none;
     margin: 1rem 0;
@@ -344,8 +352,7 @@ ul:hover {
 .footer {
     background: #AB88ff;
     color: white;
-    display: flex;
-    align-items: center;
+    @extend .flex;
     height: 100px;
     padding: 0 30px;
 }
@@ -388,7 +395,6 @@ ul:hover {
     border-right: 0;
     border-bottom: 2px solid white;
     font-size: 1rem;
-    font-family: 'Muli', sans-serif;
     outline: none;
     margin-bottom: 10px;
     padding: 0 10px;
@@ -402,7 +408,6 @@ ul:hover {
     letter-spacing: 3px;
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Muli', sans-serif;
     color: white;
     border: none;
     margin: 1rem 0;

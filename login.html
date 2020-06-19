@@ -11,17 +11,17 @@
 </head>
 
 <body>
-    <header class="headerLogin">
-        <img class="header__img" src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="Logo Platzi Video">
+    <header class="header bg-header">
+        <img tabindex="0" class="header__img" src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="Logo Platzi Video">
     </header>
-    <section class="login">
+    <section class="main login">
         <div class="login__form">
-            <h2 class="login__form--title">
+            <h2 tabindex="0" class="login__form--title">
                 Inicia sesión
             </h2>
             <form action="">
-                <input type="text" class="login__form--input" placeholder="Correo" required>
-                <input type="password" class="login__form--input" placeholder="Contraseña" required>
+                <input aria-label="Correo" type="text" class="login__form--input" placeholder="Correo" required>
+                <input aria-label="Contraseña" type="password" class="login__form--input" placeholder="Contraseña" required>
                 <input class="login__form--btn" type="submit" value="Iniciar sesión">
             </form>
             <div class="login__form--remember">
